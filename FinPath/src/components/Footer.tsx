@@ -1,15 +1,19 @@
 import React from "react";
-import { Typography, Link } from '@mui/material';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 py-6 text-center">
-      <Typography variant="body2" className="text-gray-400">
-        © {new Date().getFullYear()} FinPath | All rights reserved.
-      </Typography>
-      <div className="mt-2">
-        <Link href="#" color="inherit" className="text-gray-400 mx-2">Privacy Policy</Link>
-        <Link href="#" color="inherit" className="text-gray-400 mx-2">Terms of Service</Link>
+    <footer className="bg-gray-800 text-white py-6 mt-12">
+      <div className="container mx-auto text-center">
+        <p>&copy; 2024 FinPath. All rights reserved.</p>
+        <p className="mt-2">
+          <a href="/privacy-policy" className="hover:underline">
+            Privacy Policy
+          </a>{" "}
+          |
+          <a href="/terms" className="ml-4 hover:underline">
+            Terms of Service
+          </a>
+        </p>
       </div>
     </footer>
   );
