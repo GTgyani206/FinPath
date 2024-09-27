@@ -9,17 +9,17 @@ import LearningModules from "./pages/LearningModules"; // This will be similar t
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/learning-modules" element={<LearningModules />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      {/* <div className="flex flex-col min-h-screen"> */}
+      <Navbar />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/learning-modules" element={<LearningModules />} />
+        </Routes>
+      </main>
+      <Footer />
+      {/* </div> */}
     </Router>
   );
 };
